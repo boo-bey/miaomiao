@@ -12,7 +12,7 @@ const routes = [
  cinemaRouter,
   mineRouter,
   {
-    path:'/*',
+    path:'/*',//容错当输入地址不对时，跳转到/movie
     redirect: '/movie'
   }
 ]

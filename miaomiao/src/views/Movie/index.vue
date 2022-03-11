@@ -5,24 +5,7 @@
       <div class="city">
         <router-link to="/movie/city" tag="div" class="cityl iconfont">
           上海&#xe642;
-          <!-- <ul class="mapl">
-            <div>
-              <li>上海</li>
-              <li>北京</li>
-              <li>上海</li>
-              <li>北京</li>
-              <li>上海</li>
-              <li>北京</li>
-            </div>
-            <div>
-              <li>A</li>
-              <li>B</li>
-              <li>C</li>
-              <li>D</li>
-              <li>E</li>
-              <li>F</li>
-            </div>
-          </ul> -->
+        
         </router-link>
       </div>
       <router-link tag="div" to="/movie/nowplaying" class="nowplay">
@@ -31,12 +14,14 @@
       <router-link tag="div" to="/movie/comingsoon" class="comingplay">
         <h2>即将上映</h2>
       </router-link>
-      <router-link tag="div" to="/movie/search" class="search iconfont">&#xe650;</router-link>
+      <router-link tag="div" to="/movie/search" class="search iconfont"
+        >&#xe650;</router-link
+      >
     </div>
     <keep-alive>
-        <router-view></router-view>
+      <router-view></router-view>
     </keep-alive>
-    
+
     <TabBar></TabBar>
   </div>
 </template>
@@ -101,9 +86,8 @@ export default {
   color: rgb(246, 59, 34);
   font-weight: bold;
 }
-.min{
-    padding-top: 120px;
-    box-sizing: border-box;
+.min {
+  padding-top: 120px;
+  box-sizing: border-box;
 }
-
 </style>
