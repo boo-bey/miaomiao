@@ -1,0 +1,156 @@
+@import url('./reset.css');
+
+
+/* title样式 */
+.min {
+  position: relative;
+  padding-top: 120px;
+}
+.min .title {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+}
+
+.min .title h1 {
+    font-size: 24px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgb(246, 59, 34);
+    color: #fff;
+    font-weight: normal;
+}
+
+
+
+/* 导航样式 */
+.min .nav {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #999;
+    background:#fff;
+    position:fixed ;
+    top: 60px;
+    left: 0;
+}
+
+.min .nav .city {
+    position: relative;
+}
+
+.min .mapl {
+    display: none;
+}
+
+.min .cityl:hover .mapl {
+    position: absolute;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav .city {
+    font-size: 24px;
+}
+
+.active {
+    border-bottom: 4px solid rgb(246, 59, 34);
+}
+
+.min .nav .nowplay h2,
+.min .nav .comingplay h2,
+.min .nav .search {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.min .nav .search {
+    color: rgb(246, 59, 34);
+    font-weight: bold;
+}
+.min{
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+/* 中间样式 */
+.content .search{
+    text-align: center;
+    margin: 0 auto;
+    height: 50px;
+   background:rgb(244, 244, 244) ;
+    flex-direction: column;
+   
+    display: flex;
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: flex-start;
+  
+   
+}
+.content .search input{
+   width: 90%;
+    height: 100%;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.content .search span{
+   margin-top: -20px;
+}
+.content .searchlist ul li{
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border-bottom: 1px dashed #999;
+    box-sizing: border-box;
+}
+.content .searchlist .mou{
+    padding: 10px;
+    border-bottom: 1px dashed #999;
+  
+    display: flex;
+    justify-content: space-between;
+}
+.content .searchlist .mou img{
+    margin: 10px;
+  
+}
+.content .searchlist .mou .movielist{
+    margin-left: -170px;
+}
+.content .searchlist .mou div:nth-child(3){
+    color: orange;
+    font-weight: bold;
+}
+/* 底部样式 */
+
+.foot{
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    line-height:80px ;
+    border-top: 1px solid rgb(198, 195, 195);
+}
+.foot div{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.foot div:nth-child(2){
+    color:rgb(246, 59, 34) ;
+}
